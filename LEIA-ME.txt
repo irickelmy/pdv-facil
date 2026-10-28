@@ -1,0 +1,80 @@
+PDV FÁCIL - COMO GERAR O INSTALADOR (GRÁTIS)
+=============================================
+
+Você vai precisar só de um computador com internet e um e-mail.
+Tempo: uns 15 minutos na primeira vez.
+
+
+PARTE 1 - CRIAR CONTA NO GITHUB (uma vez só)
+--------------------------------------------
+1. Entre em https://github.com e clique em "Sign up".
+2. Crie a conta (é grátis) e confirme o e-mail.
+
+
+PARTE 2 - CRIAR O "LUGAR" DO PROJETO
+------------------------------------
+1. Logado no GitHub, clique no "+" no canto de cima, à direita.
+2. Clique em "New repository".
+3. Em "Repository name", escreva:  pdv-facil
+4. Deixe marcado "Public" (Público). Assim o uso é totalmente gratuito.
+5. Clique no botão verde "Create repository".
+
+
+PARTE 3 - ENVIAR OS ARQUIVOS
+----------------------------
+1. Extraia (descompacte) o arquivo ZIP no seu computador.
+   Vai aparecer uma pasta chamada "pdv-facil".
+2. Na página do GitHub que abriu, clique em "uploading an existing file".
+3. Abra a pasta "pdv-facil" e selecione TUDO que está dentro dela
+   (Ctrl + A), incluindo a pasta ".github" e a pasta "build".
+4. Arraste tudo para a janela do GitHub e espere terminar de subir.
+5. Role a página até o fim e clique no botão verde "Commit changes".
+
+
+PARTE 4 - O GITHUB MONTA O INSTALADOR SOZINHO
+---------------------------------------------
+1. Clique na aba "Actions" (no topo do repositório).
+2. Se aparecer um botão verde pedindo para ativar, clique nele.
+3. Você verá um item "Gerar instalador do Windows" com uma bolinha amarela
+   (trabalhando). Espere uns 3 a 6 minutos até ficar com um "check" verde.
+4. Se não começar sozinho: clique em "Gerar instalador do Windows" na
+   lateral esquerda, depois em "Run workflow" e "Run workflow" de novo.
+
+
+PARTE 5 - BAIXAR O INSTALADOR
+-----------------------------
+1. Clique no item que ficou com o check verde.
+2. Role até o fim da página, na parte "Artifacts".
+3. Clique em "PDV-Facil-Instalador" para baixar um ZIP.
+4. Extraia o ZIP. Dentro está o arquivo:  PDV-Facil-Instalador.exe
+5. Esse é o instalador que você leva para o cliente.
+
+
+AVISO DO WINDOWS NA PRIMEIRA INSTALAÇÃO
+---------------------------------------
+Vai aparecer uma tela azul: "O Windows protegeu seu computador".
+Isso é normal, porque o instalador não tem assinatura paga.
+Clique em "Mais informações" e depois em "Executar assim mesmo".
+
+
+COMO ATUALIZAR O SISTEMA
+------------------------
+Quando você mudar algo no Base44 e publicar, o aplicativo já mostra a
+versão nova na próxima vez que for aberto. NÃO precisa gerar outro
+instalador.
+
+
+SE O ENDEREÇO DO SISTEMA MUDAR
+------------------------------
+Abra o arquivo main.js, ache a linha que começa com "const APP_URL" e
+troque o endereço entre aspas. Depois envie o arquivo de novo ao GitHub
+(o instalador será gerado de novo).
+
+
+OBSERVAÇÕES
+-----------
+- Login com Google dentro do aplicativo pode ser bloqueado pelo Google.
+  Para a apresentação, prefira entrar com e-mail e senha.
+- O ícone atual (verde com "PDV") é provisório. Para trocar, substitua os
+  arquivos build/icon.png e build/icon.ico por outros com o mesmo nome.
+- O aplicativo precisa de internet. Sem conexão, mostra um aviso amigável.
